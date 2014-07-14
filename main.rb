@@ -21,7 +21,8 @@ brd.set_obstacle(2,2)
 #repeat indefinately
 while true do
  system("clear") # clears the terminal every loop (to make it nice :D ) 
- 
+ system('cls') #fixes clearing console on windows
+
  brd.draw() # draws the board
  
  # gets an input from the user correponding to the direction
@@ -29,6 +30,7 @@ while true do
  
  if tt == 'q'
  	system('clear')
+ 	system('cls')
  	break
  else
  	ply.move(tt)
